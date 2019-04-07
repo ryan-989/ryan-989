@@ -1,0 +1,203 @@
+ *{
+     box-sizing: border-box;
+ }
+/* make columns fit width */
+ [class*="col-"]{
+    width:100%;
+    float: left;
+    padding: 15px;
+}
+
+ /* define rows */
+ .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    [class*="col-"]{
+        width:100%;}
+ }
+
+
+ @media only screen and (max-width: 768px) {
+     .wow{
+         widows: 80%;
+         margin:auto;
+         text-align: center;
+     }
+
+     [class*="col-"]{
+        width:100%;}
+ } 
+ 
+ @media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+ } 
+
+hr{max-width: 60vw;;}
+
+body{
+    height:100vh;
+    background-image: url(./resources/images/aluminum-audio-black-and-white-352505.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+audio{
+    display: inline-block;
+}
+header{
+    text-align: center;
+}
+
+.header-link{
+    text-decoration: None;
+}
+
+
+.R-container{
+    width: calc(100vh*0.4);
+    margin:auto;
+    text-align: center;
+    
+}
+.R{
+    font-size: 600%;
+    color: red;
+    animation-name:rotary;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 4s ;
+}
+
+@keyframes rotary{
+    from{transform: rotateY(0deg);}
+    to{transform: rotateY(360deg)}
+}
+
+.R::after{
+    content: "";
+    font-size:0.4em;
+}
+
+.white-text{
+    color:white;
+}
+.grey-text{
+    color: rgb(216, 213, 213);
+}
+
+.button_link{
+    color:white;
+    text-decoration: none;
+    border: .5px solid red;
+    padding:.2em;
+    border-radius: 2px;
+    box-shadow: 1px 1px red;
+    transition: background-color 2s, color .5s;
+    /* transition: ; */
+}
+
+.button_link:hover{
+    color:black;
+    background-color: red;
+    box-shadow: 1px 1px grey;
+}
+
+.button_{
+    text-decoration: none;
+    border: .5px solid white;
+    padding:.2em;
+    border-radius: 2px;
+    box-shadow: 1px 1px white;
+    transition: background-color 2s, color .5s;
+    /* transition: ; */
+}
+
+.button_:hover{
+    color:black;
+    background-color: white;
+    box-shadow: 1px 1px grey;
+}
+
+#bookings{
+    text-decoration:none;
+    border-bottom: .5px solid red;
+}
+
+.releases{
+    width:auto;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .7);
+    min-height: 40vh;
+}
+#releases {
+border-bottom: 1px solid red;
+}
+
+
+
+
+
+/* contact */
+
+i {
+    display: block;
+    width: 100%;
+    margin-bottom: 4vh
+  }
+  
+  #contact-card{
+      /* text-align: center; */
+      padding-left: 3%;
+      background-color: rgba(255, 255, 255, .7);
+      width:20%;
+      margin:auto;
+  }
+
+  #contact-card>p>a{
+      color:black;
+      text-decoration: none;
+  }
+
+  #contact-card>p>a:hover{
+      color:goldenrod;
+      background-color: black;
+  }
+
+
+  .icon{
+      height:20px;
+      width:20px;
+  }
+
+  .divider{
+      height:25vh;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    text-align: center;
+  }
